@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Fire Give Skin</title>
+  <meta name="description" content="Kirim feedback & pilih skin Free Fire" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Oxanium:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="top">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo.png" alt="Free Fire"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+      <span class="brand-icon brand-icon-fallback" style="display:none"><i class="fa-solid fa-fire"></i></span>
+      <div>
+        <strong>FF GIVE SKIN</strong>
+        <span>Official Free Fire Skin Giveaway</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card hero-card">
+      <h1>Free Give Skin</h1>
+      <p>Pilih sampai <strong>4 skin</strong>, isi ID Free Fire, lalu kirim. Pesan opsional. Admin akan kirimkan skin tersebut.</p>
+    </section>
+
+    <!-- SKIN GRID -->
+    <section class="card">
+      <div class="sec-head">
+        <h2><i class="fa-solid fa-fire"></i> pilih skin yang di inginkan</h2>
+        <span class="hint" id="skinHint">Belum dipilih (max 4)</span>
+      </div>
+      <p class="skin-rank-note">Urut dari yang paling sering dipilih · scroll untuk lihat semua</p>
+      <div class="skin-scroll" id="skinScroll">
+        <div class="skin-grid" id="skinGrid"></div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="card">
+      <div class="sec-head">
+        <h2><i class="fa-solid fa-paper-plane"></i> Isi ID Free Fire kalian dan nickname</h2>
+      </div>
+      <form id="feedbackForm" class="form" autocomplete="off">
+        <label>
+          <span>Nama</span>
+          <input type="text" id="nameInput" maxlength="32" placeholder="Nama / nickname" required />
+        </label>
+        <label>
+          <span>ID Free Fire <small>(Wajib)</small></span>
+          <input type="text" id="contactInput" maxlength="40" placeholder="ID Free Fire" required />
+        </label>
+        <label>
+          <span>Pesan <small>(Opsional)</small></span>
+          <textarea id="msgInput" maxlength="500" rows="4" placeholder="Opsional — contoh: min cepetan dikirim ya"></textarea>
+        </label>
+
+        <div class="selected-bar" id="selectedBar">
+          <div class="selected-thumbs" id="selectedThumbs" hidden></div>
+          <img id="selectedThumb" src="" alt="" hidden />
+          <div>
+            <strong id="selectedName">Skin belum dipilih</strong>
+            <span id="selectedSub">Pilih 1–3 skin di atas</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-send" id="sendBtn">
+          <i class="fa-brands fa-discord"></i>
+          Kirim permintaan
+        </button>
+        <p class="form-note">Skin akan dikirim oleh admin. Bisa pilih maksimal 3 skin.</p>
+      </form>
+    </section>
+  </main>
+
+  <div class="toast" id="toast">
+    <strong id="toastTitle">OK</strong>
+    <span id="toastMsg"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
