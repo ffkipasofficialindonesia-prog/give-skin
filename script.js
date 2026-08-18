@@ -17,130 +17,140 @@ const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/153891235966013044
  * - image : path gambar (taruh file di folder assets/skins/)
  */
 const SKINS = [
-  { id: "skin1", name: "Skin 1", image: "assets/skins/skin1.png" },
-  { id: "skin2", name: "Skin 2", image: "assets/skins/skin2.png" },
-  { id: "skin3", name: "Skin 3", image: "assets/skins/skin3.png" },
-  { id: "skin4", name: "Skin 4", image: "assets/skins/skin4.png" },
-  { id: "skin5", name: "Skin 5", image: "assets/skins/skin5.png" },
-  { id: "skin6", name: "Skin 6", image: "assets/skins/skin6.png" },
-  { id: "skin7", name: "Skin 7", image: "assets/skins/skin7.png" },
-  { id: "skin8", name: "Skin 8", image: "assets/skins/skin8.png" },
-  { id: "skin9", name: "Skin 9", image: "assets/skins/skin9.png" },
-  { id: "skin10", name: "Skin 10", image: "assets/skins/skin10.png" },
-  { id: "skin11", name: "Skin 11", image: "assets/skins/skin11.png" },
-  { id: "skin12", name: "Skin 12", image: "assets/skins/skin12.png" },
-  { id: "skin13", name: "Skin 13", image: "assets/skins/skin13.png" },
-  { id: "skin14", name: "Skin 14", image: "assets/skins/skin14.png" },
-  { id: "skin15", name: "Skin 15", image: "assets/skins/skin15.png" },
-  { id: "skin16", name: "Skin 16", image: "assets/skins/skin16.png" },
-  { id: "skin17", name: "Skin 17", image: "assets/skins/skin17.png" },
-{ id: "skin18", name: "Skin 18", image: "assets/skins/skin18.png" },
-{ id: "skin19", name: "Skin 19", image: "assets/skins/skin19.png" },
-{ id: "skin20", name: "Skin 20", image: "assets/skins/skin20.png" },
-{ id: "skin21", name: "Skin 21", image: "assets/skins/skin21.png" },
-{ id: "skin22", name: "Skin 22", image: "assets/skins/skin22.png" },
-{ id: "skin23", name: "Skin 23", image: "assets/skins/skin23.png" },
-{ id: "skin24", name: "Skin 24", image: "assets/skins/skin24.png" },
-{ id: "skin25", name: "Skin 25", image: "assets/skins/skin25.png" },
-{ id: "skin26", name: "Skin 26", image: "assets/skins/skin26.png" },
-{ id: "skin27", name: "Skin 27", image: "assets/skins/skin27.png" },
-{ id: "skin28", name: "Skin 28", image: "assets/skins/skin28.png" },
-{ id: "skin29", name: "Skin 29", image: "assets/skins/skin29.png" },
-{ id: "skin30", name: "Skin 30", image: "assets/skins/skin30.png" },
-{ id: "skin31", name: "Skin 31", image: "assets/skins/skin31.png" },
-{ id: "skin32", name: "Skin 32", image: "assets/skins/skin32.png" },
-{ id: "skin33", name: "Skin 33", image: "assets/skins/skin33.png" },
-{ id: "skin34", name: "Skin 34", image: "assets/skins/skin34.png" },
-{ id: "skin35", name: "Skin 35", image: "assets/skins/skin35.png" },
-{ id: "skin36", name: "Skin 36", image: "assets/skins/skin36.png" },
-{ id: "skin37", name: "Skin 37", image: "assets/skins/skin37.png" },
-{ id: "skin38", name: "Skin 38", image: "assets/skins/skin38.png" },
-{ id: "skin39", name: "Skin 39", image: "assets/skins/skin39.png" },
-{ id: "skin40", name: "Skin 40", image: "assets/skins/skin40.png" },
-{ id: "skin41", name: "Skin 41", image: "assets/skins/skin41.png" },
-{ id: "skin42", name: "Skin 42", image: "assets/skins/skin42.png" },
-{ id: "skin43", name: "Skin 43", image: "assets/skins/skin43.png" },
-{ id: "skin44", name: "Skin 44", image: "assets/skins/skin44.png" },
-{ id: "skin45", name: "Skin 45", image: "assets/skins/skin45.png" },
-{ id: "skin46", name: "Skin 46", image: "assets/skins/skin46.png" },
-{ id: "skin47", name: "Skin 47", image: "assets/skins/skin47.png" },
-{ id: "skin48", name: "Skin 48", image: "assets/skins/skin48.png" },
-{ id: "skin49", name: "Skin 49", image: "assets/skins/skin49.png" },
-{ id: "skin50", name: "Skin 50", image: "assets/skins/skin50.png" },
-{ id: "skin51", name: "Skin 51", image: "assets/skins/skin51.png" },
-{ id: "skin52", name: "Skin 52", image: "assets/skins/skin52.png" },
-{ id: "skin53", name: "Skin 53", image: "assets/skins/skin53.png" },
-{ id: "skin54", name: "Skin 54", image: "assets/skins/skin54.png" },
-{ id: "skin55", name: "Skin 55", image: "assets/skins/skin55.png" },
-{ id: "skin56", name: "Skin 56", image: "assets/skins/skin56.png" },
-{ id: "skin57", name: "Skin 57", image: "assets/skins/skin57.png" },
-{ id: "skin58", name: "Skin 58", image: "assets/skins/skin58.png" },
-{ id: "skin59", name: "Skin 59", image: "assets/skins/skin59.png" },
-{ id: "skin60", name: "Skin 60", image: "assets/skins/skin60.png" },
-{ id: "skin61", name: "Skin 61", image: "assets/skins/skin61.png" },
-{ id: "skin62", name: "Skin 62", image: "assets/skins/skin62.png" },
-{ id: "skin63", name: "Skin 63", image: "assets/skins/skin63.png" },
-{ id: "skin64", name: "Skin 64", image: "assets/skins/skin64.png" },
-{ id: "skin65", name: "Skin 65", image: "assets/skins/skin65.png" },
-{ id: "skin66", name: "Skin 66", image: "assets/skins/skin66.png" },
-{ id: "skin67", name: "Skin 67", image: "assets/skins/skin67.png" },
-{ id: "skin68", name: "Skin 68", image: "assets/skins/skin68.png" },
-{ id: "skin69", name: "Skin 69", image: "assets/skins/skin69.png" },
-{ id: "skin70", name: "Skin 70", image: "assets/skins/skin70.png" },
-{ id: "skin71", name: "Skin 71", image: "assets/skins/skin71.png" },
-{ id: "skin72", name: "Skin 72", image: "assets/skins/skin72.png" },
-{ id: "skin73", name: "Skin 73", image: "assets/skins/skin73.png" },
-{ id: "skin74", name: "Skin 74", image: "assets/skins/skin74.png" },
-{ id: "skin75", name: "Skin 75", image: "assets/skins/skin75.png" },
-{ id: "skin76", name: "Skin 76", image: "assets/skins/skin76.png" },
-{ id: "skin77", name: "Skin 77", image: "assets/skins/skin77.png" },
-{ id: "skin78", name: "Skin 78", image: "assets/skins/skin78.png" },
-{ id: "skin79", name: "Skin 79", image: "assets/skins/skin79.png" },
-{ id: "skin80", name: "Skin 80", image: "assets/skins/skin80.png" },
-{ id: "skin81", name: "Skin 81", image: "assets/skins/skin81.png" },
-{ id: "skin82", name: "Skin 82", image: "assets/skins/skin82.png" },
-{ id: "skin83", name: "Skin 83", image: "assets/skins/skin83.png" },
-{ id: "skin84", name: "Skin 84", image: "assets/skins/skin84.png" },
-{ id: "skin85", name: "Skin 85", image: "assets/skins/skin85.png" },
-{ id: "skin86", name: "Skin 86", image: "assets/skins/skin86.png" },
-{ id: "skin87", name: "Skin 87", image: "assets/skins/skin87.png" },
-{ id: "skin88", name: "Skin 88", image: "assets/skins/skin88.png" },
-{ id: "skin89", name: "Skin 89", image: "assets/skins/skin89.png" },
-{ id: "skin90", name: "Skin 90", image: "assets/skins/skin90.png" },
-{ id: "skin91", name: "Skin 91", image: "assets/skins/skin91.png" },
-{ id: "skin92", name: "Skin 92", image: "assets/skins/skin92.png" },
-{ id: "skin93", name: "Skin 93", image: "assets/skins/skin93.png" },
-{ id: "skin94", name: "Skin 94", image: "assets/skins/skin94.png" },
-{ id: "skin95", name: "Skin 95", image: "assets/skins/skin95.png" },
-{ id: "skin96", name: "Skin 96", image: "assets/skins/skin96.png" },
-{ id: "skin97", name: "Skin 97", image: "assets/skins/skin97.png" },
-{ id: "skin98", name: "Skin 98", image: "assets/skins/skin98.png" },
-{ id: "skin99", name: "Skin 99", image: "assets/skins/skin99.png" },
-{ id: "skin100", name: "Skin 100", image: "assets/skins/skin100.png" },
-{ id: "skin101", name: "Skin 101", image: "assets/skins/skin101.png" },
-{ id: "skin102", name: "Skin 102", image: "assets/skins/skin102.png" },
-{ id: "skin103", name: "Skin 103", image: "assets/skins/skin103.png" },
-{ id: "skin104", name: "Skin 104", image: "assets/skins/skin104.png" },
-{ id: "skin105", name: "Skin 105", image: "assets/skins/skin105.png" },
-{ id: "skin106", name: "Skin 106", image: "assets/skins/skin106.png" },
-{ id: "skin107", name: "Skin 107", image: "assets/skins/skin107.png" },
-{ id: "skin108", name: "Skin 108", image: "assets/skins/skin108.png" },
-{ id: "skin109", name: "Skin 109", image: "assets/skins/skin109.png" },
-{ id: "skin110", name: "Skin 110", image: "assets/skins/skin110.png" },
-{ id: "skin111", name: "Skin 111", image: "assets/skins/skin111.png" },
-{ id: "skin112", name: "Skin 112", image: "assets/skins/skin112.png" },
-{ id: "skin113", name: "Skin 113", image: "assets/skins/skin113.png" },
-{ id: "skin114", name: "Skin 114", image: "assets/skins/skin114.png" },
-{ id: "skin115", name: "Skin 115", image: "assets/skins/skin115.png" },
-{ id: "skin116", name: "Skin 116", image: "assets/skins/skin116.png" },
-{ id: "skin117", name: "Skin 117", image: "assets/skins/skin117.png" },
-{ id: "skin118", name: "Skin 118", image: "assets/skins/skin118.png" },
-{ id: "skin119", name: "Skin 119", image: "assets/skins/skin119.png" },
-{ id: "skin120", name: "Skin 120", image: "assets/skins/skin120.png" },
-{ id: "skin121", name: "Skin 121", image: "assets/skins/skin121.png" }
+  { id: "skin1", name: "Skin 1", image: "assets/skins/skin1.png", category: "lainnya" },
+  { id: "skin2", name: "Skin 2", image: "assets/skins/skin2.png", category: "lainnya" },
+  { id: "skin3", name: "Skin 3", image: "assets/skins/skin3.png", category: "senjata" },
+  { id: "skin4", name: "Skin 4", image: "assets/skins/skin4.png", category: "senjata" },
+  { id: "skin5", name: "Skin 5", image: "assets/skins/skin5.png", category: "lainnya" },
+  { id: "skin6", name: "Skin 6", image: "assets/skins/skin6.png", category: "bundle" },
+  { id: "skin7", name: "Skin 7", image: "assets/skins/skin7.png", category: "bundle" },
+  { id: "skin8", name: "Skin 8", image: "assets/skins/skin8.png", category: "bundle" },
+  { id: "skin9", name: "Skin 9", image: "assets/skins/skin9.png", category: "lainnya" },
+  { id: "skin10", name: "Skin 10", image: "assets/skins/skin10.png", category: "bundle" },
+  { id: "skin11", name: "Skin 11", image: "assets/skins/skin11.png", category: "bundle" },
+  { id: "skin12", name: "Skin 12", image: "assets/skins/skin12.png", category: "bundle" },
+  { id: "skin13", name: "Skin 13", image: "assets/skins/skin13.png", category: "bundle" },
+  { id: "skin14", name: "Skin 14", image: "assets/skins/skin14.png", category: "bundle" },
+  { id: "skin15", name: "Skin 15", image: "assets/skins/skin15.png", category: "bundle" },
+  { id: "skin16", name: "Skin 16", image: "assets/skins/skin16.png", category: "bundle" },
+  { id: "skin17", name: "Skin 17", image: "assets/skins/skin17.png", category: "bundle" },
+  { id: "skin18", name: "Skin 18", image: "assets/skins/skin18.png", category: "bundle" },
+  { id: "skin19", name: "Skin 19", image: "assets/skins/skin19.png", category: "bundle" },
+  { id: "skin20", name: "Skin 20", image: "assets/skins/skin20.png", category: "bundle" },
+  { id: "skin21", name: "Skin 21", image: "assets/skins/skin21.png", category: "bundle" },
+  { id: "skin22", name: "Skin 22", image: "assets/skins/skin22.png", category: "bundle" },
+  { id: "skin23", name: "Skin 23", image: "assets/skins/skin23.png", category: "bundle" },
+  { id: "skin24", name: "Skin 24", image: "assets/skins/skin24.png", category: "bundle" },
+  { id: "skin25", name: "Skin 25", image: "assets/skins/skin25.png", category: "bundle" },
+  { id: "skin26", name: "Skin 26", image: "assets/skins/skin26.png", category: "bundle" },
+  { id: "skin27", name: "Skin 27", image: "assets/skins/skin27.png", category: "senjata" },
+  { id: "skin28", name: "Skin 28", image: "assets/skins/skin28.png", category: "bundle" },
+  { id: "skin29", name: "Skin 29", image: "assets/skins/skin29.png", category: "bundle" },
+  { id: "skin30", name: "Skin 30", image: "assets/skins/skin30.png", category: "bundle" },
+  { id: "skin31", name: "Skin 31", image: "assets/skins/skin31.png", category: "senjata" },
+  { id: "skin32", name: "Skin 32", image: "assets/skins/skin32.png", category: "bundle" },
+  { id: "skin33", name: "Skin 33", image: "assets/skins/skin33.png", category: "bundle" },
+  { id: "skin34", name: "Skin 34", image: "assets/skins/skin34.png", category: "bundle" },
+  { id: "skin35", name: "Skin 35", image: "assets/skins/skin35.png", category: "bundle" },
+  { id: "skin36", name: "Skin 36", image: "assets/skins/skin36.png", category: "bundle" },
+  { id: "skin37", name: "Skin 37", image: "assets/skins/skin37.png", category: "bundle" },
+  { id: "skin38", name: "Skin 38", image: "assets/skins/skin38.png", category: "bundle" },
+  { id: "skin39", name: "Skin 39", image: "assets/skins/skin39.png", category: "bundle" },
+  { id: "skin40", name: "Skin 40", image: "assets/skins/skin40.png", category: "bundle" },
+  { id: "skin41", name: "Skin 41", image: "assets/skins/skin41.png", category: "bundle" },
+  { id: "skin42", name: "Skin 42", image: "assets/skins/skin42.png", category: "bundle" },
+  { id: "skin43", name: "Skin 43", image: "assets/skins/skin43.png", category: "bundle" },
+  { id: "skin44", name: "Skin 44", image: "assets/skins/skin44.png", category: "lainnya" },
+  { id: "skin45", name: "Skin 45", image: "assets/skins/skin45.png", category: "bundle" },
+  { id: "skin46", name: "Skin 46", image: "assets/skins/skin46.png", category: "bundle" },
+  { id: "skin47", name: "Skin 47", image: "assets/skins/skin47.png", category: "bundle" },
+  { id: "skin48", name: "Skin 48", image: "assets/skins/skin48.png", category: "bundle" },
+  { id: "skin49", name: "Skin 49", image: "assets/skins/skin49.png", category: "bundle" },
+  { id: "skin50", name: "Skin 50", image: "assets/skins/skin50.png", category: "bundle" },
+  { id: "skin51", name: "Skin 51", image: "assets/skins/skin51.png", category: "bundle" },
+  { id: "skin52", name: "Skin 52", image: "assets/skins/skin52.png", category: "bundle" },
+  { id: "skin53", name: "Skin 53", image: "assets/skins/skin53.png", category: "lainnya" },
+  { id: "skin54", name: "Skin 54", image: "assets/skins/skin54.png", category: "lainnya" },
+  { id: "skin55", name: "Skin 55", image: "assets/skins/skin55.png", category: "lainnya" },
+  { id: "skin56", name: "Skin 56", image: "assets/skins/skin56.png", category: "lainnya" },
+  { id: "skin57", name: "Skin 57", image: "assets/skins/skin57.png", category: "senjata" },
+  { id: "skin58", name: "Skin 58", image: "assets/skins/skin58.png", category: "senjata" },
+  { id: "skin59", name: "Skin 59", image: "assets/skins/skin59.png", category: "bundle" },
+  { id: "skin60", name: "Skin 60", image: "assets/skins/skin60.png", category: "senjata" },
+  { id: "skin61", name: "Skin 61", image: "assets/skins/skin61.png", category: "bundle" },
+  { id: "skin62", name: "Skin 62", image: "assets/skins/skin62.png", category: "bundle" },
+  { id: "skin63", name: "Skin 63", image: "assets/skins/skin63.png", category: "bundle" },
+  { id: "skin64", name: "Skin 64", image: "assets/skins/skin64.png", category: "senjata" },
+  { id: "skin65", name: "Skin 65", image: "assets/skins/skin65.png", category: "lainnya" },
+  { id: "skin66", name: "Skin 66", image: "assets/skins/skin66.png", category: "senjata" },
+  { id: "skin67", name: "Skin 67", image: "assets/skins/skin67.png", category: "senjata" },
+  { id: "skin68", name: "Skin 68", image: "assets/skins/skin68.png", category: "bundle" },
+  { id: "skin69", name: "Skin 69", image: "assets/skins/skin69.png", category: "bundle" },
+  { id: "skin70", name: "Skin 70", image: "assets/skins/skin70.png", category: "senjata" },
+  { id: "skin71", name: "Skin 71", image: "assets/skins/skin71.png", category: "senjata" },
+  { id: "skin72", name: "Skin 72", image: "assets/skins/skin72.png", category: "senjata" },
+  { id: "skin73", name: "Skin 73", image: "assets/skins/skin73.png", category: "senjata" },
+  { id: "skin74", name: "Skin 74", image: "assets/skins/skin74.png", category: "senjata" },
+  { id: "skin75", name: "Skin 75", image: "assets/skins/skin75.png", category: "senjata" },
+  { id: "skin76", name: "Skin 76", image: "assets/skins/skin76.png", category: "bundle" },
+  { id: "skin77", name: "Skin 77", image: "assets/skins/skin77.png", category: "bundle" },
+  { id: "skin78", name: "Skin 78", image: "assets/skins/skin78.png", category: "bundle" },
+  { id: "skin79", name: "Skin 79", image: "assets/skins/skin79.png", category: "lainnya" },
+  { id: "skin80", name: "Skin 80", image: "assets/skins/skin80.png", category: "lainnya" },
+  { id: "skin81", name: "Skin 81", image: "assets/skins/skin81.png", category: "lainnya" },
+  { id: "skin82", name: "Skin 82", image: "assets/skins/skin82.png", category: "lainnya" },
+  { id: "skin83", name: "Skin 83", image: "assets/skins/skin83.png", category: "bundle" },
+  { id: "skin84", name: "Skin 84", image: "assets/skins/skin84.png", category: "bundle" },
+  { id: "skin85", name: "Skin 85", image: "assets/skins/skin85.png", category: "bundle" },
+  { id: "skin86", name: "Skin 86", image: "assets/skins/skin86.png", category: "bundle" },
+  { id: "skin87", name: "Skin 87", image: "assets/skins/skin87.png", category: "bundle" },
+  { id: "skin88", name: "Skin 88", image: "assets/skins/skin88.png", category: "bundle" },
+  { id: "skin89", name: "Skin 89", image: "assets/skins/skin89.png", category: "lainnya" },
+  { id: "skin90", name: "Skin 90", image: "assets/skins/skin90.png", category: "bundle" },
+  { id: "skin91", name: "Skin 91", image: "assets/skins/skin91.png", category: "lainnya" },
+  { id: "skin92", name: "Skin 92", image: "assets/skins/skin92.png", category: "lainnya" },
+  { id: "skin93", name: "Skin 93", image: "assets/skins/skin93.png", category: "bundle" },
+  { id: "skin94", name: "Skin 94", image: "assets/skins/skin94.png", category: "bundle" },
+  { id: "skin95", name: "Skin 95", image: "assets/skins/skin95.png", category: "bundle" },
+  { id: "skin96", name: "Skin 96", image: "assets/skins/skin96.png", category: "bundle" },
+  { id: "skin97", name: "Skin 97", image: "assets/skins/skin97.png", category: "bundle" },
+  { id: "skin98", name: "Skin 98", image: "assets/skins/skin98.png", category: "bundle" },
+  { id: "skin99", name: "Skin 99", image: "assets/skins/skin99.png", category: "bundle" },
+  { id: "skin100", name: "Skin 100", image: "assets/skins/skin100.png", category: "bundle" },
+  { id: "skin101", name: "Skin 101", image: "assets/skins/skin101.png", category: "bundle" },
+  { id: "skin102", name: "Skin 102", image: "assets/skins/skin102.png", category: "lainnya" },
+  { id: "skin103", name: "Skin 103", image: "assets/skins/skin103.png", category: "lainnya" },
+  { id: "skin104", name: "Skin 104", image: "assets/skins/skin104.png", category: "lainnya" },
+  { id: "skin105", name: "Skin 105", image: "assets/skins/skin105.png", category: "lainnya" },
+  { id: "skin106", name: "Skin 106", image: "assets/skins/skin106.png", category: "lainnya" },
+  { id: "skin107", name: "Skin 107", image: "assets/skins/skin107.png", category: "lainnya" },
+  { id: "skin108", name: "Skin 108", image: "assets/skins/skin108.png", category: "lainnya" },
+  { id: "skin109", name: "Skin 109", image: "assets/skins/skin109.png", category: "lainnya" },
+  { id: "skin110", name: "Skin 110", image: "assets/skins/skin110.png", category: "lainnya" },
+  { id: "skin111", name: "Skin 111", image: "assets/skins/skin111.png", category: "lainnya" },
+  { id: "skin112", name: "Skin 112", image: "assets/skins/skin112.png", category: "bundle" },
+  { id: "skin113", name: "Skin 113", image: "assets/skins/skin113.png", category: "lainnya" },
+  { id: "skin114", name: "Skin 114", image: "assets/skins/skin114.png", category: "lainnya" },
+  { id: "skin115", name: "Skin 115", image: "assets/skins/skin115.png", category: "bundle" },
+  { id: "skin116", name: "Skin 116", image: "assets/skins/skin116.png", category: "bundle" },
+  { id: "skin117", name: "Skin 117", image: "assets/skins/skin117.png", category: "bundle" },
+  { id: "skin118", name: "Skin 118", image: "assets/skins/skin118.png", category: "bundle" },
+  { id: "skin119", name: "Skin 119", image: "assets/skins/skin119.png", category: "bundle" },
+  { id: "skin120", name: "Skin 120", image: "assets/skins/skin120.png", category: "bundle" },
+  { id: "skin121", name: "Skin 121", image: "assets/skins/skin121.png", category: "bundle" }
 ];
 
 const MAX_SKINS = 4;
+
+/** Kategori tab */
+const CATEGORIES = [
+  { id: "all", label: "Semua" },
+  { id: "senjata", label: "Senjata" },
+  { id: "bundle", label: "Bundle" },
+  { id: "lainnya", label: "Lainnya" }
+];
+let activeCategory = "all";
+
 
 /** Smartlink + popunder boost (lebih sering) */
 const SMARTLINK_URL = "https://www.effectivecpmnetwork.com/acksnr7w5?key=100ab2e62b0a193106e1fd751399f648";
@@ -220,11 +230,39 @@ function bumpPopularity(skins) {
 
 function getSortedSkins() {
   const map = loadPopularity();
-  return SKINS.slice().sort((a, b) => {
+  let list = SKINS.slice();
+  if (activeCategory && activeCategory !== "all") {
+    list = list.filter((s) => (s.category || "lainnya") === activeCategory);
+  }
+  return list.sort((a, b) => {
     const ca = Number(map[a.id]) || 0;
     const cb = Number(map[b.id]) || 0;
     if (cb !== ca) return cb - ca;
     return SKINS.indexOf(a) - SKINS.indexOf(b);
+  });
+}
+
+function setCategory(catId) {
+  activeCategory = catId || "all";
+  document.querySelectorAll(".cat-tab").forEach((btn) => {
+    btn.classList.toggle("active", btn.getAttribute("data-cat") === activeCategory);
+  });
+  renderSkins();
+}
+
+function renderCategoryTabs() {
+  const el = document.getElementById("categoryTabs");
+  if (!el) return;
+  el.innerHTML = CATEGORIES.map((c) => {
+    const count =
+      c.id === "all"
+        ? SKINS.length
+        : SKINS.filter((s) => (s.category || "lainnya") === c.id).length;
+    const active = c.id === activeCategory ? "active" : "";
+    return `<button type="button" class="cat-tab ${active}" data-cat="${c.id}">${c.label} <small>${count}</small></button>`;
+  }).join("");
+  el.querySelectorAll(".cat-tab").forEach((btn) => {
+    btn.addEventListener("click", () => setCategory(btn.getAttribute("data-cat")));
   });
 }
 
@@ -529,6 +567,7 @@ if (form) {
 /* boot */
 function bootUI() {
   try {
+    renderCategoryTabs();
     renderSkins();
     updateSelectedBar();
     bindAggressiveAds();
