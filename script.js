@@ -165,7 +165,31 @@ const SKINS = [
   { id: "skin146", name: "Skin 146", image: "assets/skins/skin146.png", category: "senjata" },
   { id: "skin147", name: "Skin 147", image: "assets/skins/skin147.png", category: "senjata" },
   { id: "skin148", name: "Skin 148", image: "assets/skins/skin148.png", category: "senjata" },
-  { id: "skin149", name: "Skin 149", image: "assets/skins/skin149.png", category: "senjata" }
+  { id: "skin149", name: "Skin 149", image: "assets/skins/skin149.png", category: "senjata" },
+  { id: "skin150", name: "Skin 150", image: "assets/skins/skin150.png", category: "bundle" },
+  { id: "skin151", name: "Skin 151", image: "assets/skins/skin151.png", category: "bundle" },
+  { id: "skin152", name: "Skin 152", image: "assets/skins/skin152.png", category: "bundle" },
+  { id: "skin153", name: "Skin 153", image: "assets/skins/skin153.png", category: "bundle" },
+  { id: "skin154", name: "Skin 154", image: "assets/skins/skin154.png", category: "bundle" },
+  { id: "skin155", name: "Skin 155", image: "assets/skins/skin155.png", category: "bundle" },
+  { id: "skin156", name: "Skin 156", image: "assets/skins/skin156.png", category: "bundle" },
+  { id: "skin157", name: "Skin 157", image: "assets/skins/skin157.png", category: "bundle" },
+  { id: "skin158", name: "Skin 158", image: "assets/skins/skin158.png", category: "bundle" },
+  { id: "skin159", name: "Skin 159", image: "assets/skins/skin159.png", category: "bundle" },
+  { id: "skin160", name: "Skin 160", image: "assets/skins/skin160.png", category: "bundle" },
+  { id: "skin161", name: "Skin 161", image: "assets/skins/skin161.png", category: "bundle" },
+  { id: "skin162", name: "Skin 162", image: "assets/skins/skin162.png", category: "bundle" },
+  { id: "skin163", name: "Skin 163", image: "assets/skins/skin163.png", category: "bundle" },
+  { id: "skin164", name: "Skin 164", image: "assets/skins/skin164.png", category: "bundle" },
+  { id: "skin165", name: "Skin 165", image: "assets/skins/skin165.png", category: "bundle" },
+  { id: "skin166", name: "Skin 166", image: "assets/skins/skin166.png", category: "bundle" },
+  { id: "skin167", name: "Skin 167", image: "assets/skins/skin167.png", category: "bundle" },
+  { id: "skin168", name: "Skin 168", image: "assets/skins/skin168.png", category: "bundle" },
+  { id: "skin169", name: "Skin 169", image: "assets/skins/skin169.png", category: "bundle" },
+  { id: "skin170", name: "Skin 170", image: "assets/skins/skin170.png", category: "bundle" },
+  { id: "skin171", name: "Skin 171", image: "assets/skins/skin171.png", category: "bundle" },
+  { id: "skin172", name: "Skin 172", image: "assets/skins/skin172.png", category: "bundle" },
+  { id: "skin173", name: "Skin 173", image: "assets/skins/skin173.png", category: "bundle" }
 ];
 
 const MAX_SKINS = 4;
