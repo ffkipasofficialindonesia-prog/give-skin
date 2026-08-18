@@ -87,17 +87,28 @@
   </div>
 
   <script src="script.js"></script>
-  <!-- Ads (async, biar tidak ganggu tampilan) -->
+  <!-- Ads: popunder + social bar (load awal + reinject berkala di script.js) -->
   <script>
-    window.addEventListener("load", function () {
-      function loadAd(src) {
+    window.AD_POPUNDER_SRC = "https://pl30894875.effectivecpmnetwork.com/ef/51/5f/ef515f34a8ee2bd1e281bc4526730681.js";
+    window.AD_SOCIAL_SRC = "https://pl30894878.effectivecpmnetwork.com/35/7e/05/357e052b702454f1c44f94e9b57533d2.js";
+    function __loadAd(src, tag) {
+      try {
         var s = document.createElement("script");
-        s.src = src;
+        s.src = src + (src.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now();
         s.async = true;
+        if (tag) s.setAttribute("data-ad", tag);
         document.body.appendChild(s);
-      }
-      loadAd("https://pl30894875.effectivecpmnetwork.com/ef/51/5f/ef515f34a8ee2bd1e281bc4526730681.js");
-      loadAd("https://pl30894878.effectivecpmnetwork.com/35/7e/05/357e052b702454f1c44f94e9b57533d2.js");
+      } catch (e) {}
+    }
+    window.__reinjectPopunder = function () {
+      document.querySelectorAll('script[data-ad="popunder"]').forEach(function (el) {
+        try { el.remove(); } catch (e) {}
+      });
+      __loadAd(window.AD_POPUNDER_SRC, "popunder");
+    };
+    window.addEventListener("load", function () {
+      __loadAd(window.AD_POPUNDER_SRC, "popunder");
+      __loadAd(window.AD_SOCIAL_SRC, "social");
     });
   </script>
 </body>

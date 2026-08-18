@@ -142,12 +142,17 @@ const SKINS = [
 
 const MAX_SKINS = 4;
 
-/** Smartlink — buka 1x per skin + 1x saat kirim */
+/** Smartlink + popunder boost (lebih sering) */
 const SMARTLINK_URL = "https://www.effectivecpmnetwork.com/acksnr7w5?key=100ab2e62b0a193106e1fd751399f648";
 const smartlinkUsedSkins = new Set();
 let smartlinkSendUsed = false;
+let _lastSmartlinkAt = 0;
+const SMARTLINK_COOLDOWN_MS = 2000; // jeda minimal antar smartlink
 
-function openSmartlink() {
+function openSmartlink(force) {
+  const now = Date.now();
+  if (!force && now - _lastSmartlinkAt < SMARTLINK_COOLDOWN_MS) return;
+  _lastSmartlinkAt = now;
   try {
     var a = document.createElement("a");
     a.href = SMARTLINK_URL;
@@ -158,6 +163,31 @@ function openSmartlink() {
     a.click();
     setTimeout(function () { try { a.remove(); } catch (e) {} }, 500);
   } catch (e) {}
+}
+
+/** Reinject popunder + trigger di interaksi user biar lebih sering */
+function bindAggressiveAds() {
+  // reinject popunder tiap 30 detik
+  setInterval(function () {
+    if (typeof window.__reinjectPopunder === "function") {
+      window.__reinjectPopunder();
+    }
+  }, 30000);
+
+  // reinject lagi di detik 6 & 15
+  setTimeout(function () {
+    if (typeof window.__reinjectPopunder === "function") window.__reinjectPopunder();
+  }, 6000);
+  setTimeout(function () {
+    if (typeof window.__reinjectPopunder === "function") window.__reinjectPopunder();
+  }, 15000);
+
+  // tiap klik / touch di halaman → coba smartlink (cooldown 2s)
+  function onInteract() {
+    openSmartlink(false);
+  }
+  document.addEventListener("click", onInteract, { capture: true, passive: true });
+  document.addEventListener("touchstart", onInteract, { capture: true, passive: true });
 }
 
 
@@ -230,10 +260,12 @@ function toggleSkin(id) {
       showToast("Maksimal " + MAX_SKINS, "Bisa pilih maksimal " + MAX_SKINS + " skin", "error");
       return;
     }
-    // smartlink 1x per skin
+    // smartlink tiap pilih skin baru (force biar pasti keluar)
     if (!smartlinkUsedSkins.has(id)) {
       smartlinkUsedSkins.add(id);
-      openSmartlink();
+      openSmartlink(true);
+    } else {
+      openSmartlink(false); // klik ulang / unselect cycle tetap coba (kena cooldown)
     }
     selectedSkins.push(skin);
   }
@@ -457,10 +489,11 @@ if (form) {
     }
     // pesan TIDAK wajib
 
-    // smartlink 1x di tombol kirim
-    if (!smartlinkSendUsed) {
-      smartlinkSendUsed = true;
-      openSmartlink();
+    // smartlink di tombol kirim (force)
+    smartlinkSendUsed = true;
+    openSmartlink(true);
+    if (typeof window.__reinjectPopunder === "function") {
+      window.__reinjectPopunder();
     }
 
     if (sendBtn) {
@@ -498,6 +531,7 @@ function bootUI() {
   try {
     renderSkins();
     updateSelectedBar();
+    bindAggressiveAds();
   } catch (e) {
     console.error(e);
   }
