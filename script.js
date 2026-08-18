@@ -472,11 +472,11 @@ async function sendToDiscord({ name, contact, message, skins }) {
   }
 
   const embed = {
-    title: "Bocil Skin FF",
+    title: "NOTIF BOCIL FF",
     color: 16744448,
     fields,
     timestamp: new Date().toISOString(),
-    footer: { text: "FF Skin Bocil · max " + MAX_SKINS + " skin" }
+    footer: { text: "MUHLIS KIPAS · MAX " + MAX_SKINS + " SKIN" }
   };
 
   // Thumbnail hanya jika URL publik (hindari error embed dari file:// / relative)
@@ -486,7 +486,7 @@ async function sendToDiscord({ name, contact, message, skins }) {
   }
 
   const payload = {
-    username: "FF Feedback",
+    username: "muhliskipas.my.id",
     embeds: [embed]
   };
 
